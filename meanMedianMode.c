@@ -6,7 +6,8 @@ int main(void){
 	int a,b,c,d,e;
 	float mean,median,mode;
 
-	while(e != 0){
+
+	//while(e != 0){
 	printf("Please input 5 integers and hit Enter after each one\n");
 	scanf("%s\n",ia);
 	a = atoi(ia);
@@ -18,15 +19,23 @@ int main(void){
 	d = atoi(id);
 	scanf("%s\n",ie);
 	e = atoi(ie);
-//	printf("Type done and hit enter when finished");
-	}
-	char enter;
+	//printf("Type done and hit enter when finished");
+	//}
+	int enter;
 
-	//if((enter = getchar()) == '\n'){
-		mean = (a + b + c + d + e) / 5;
-		//median = 		
+//	if((enter = getchar()) == '\n'){
+	mean = (a + b + c + d + e) / 5;
+		
+
+
+
+
+
+
+
+
 		//mode = 	
-		printf("%.0f,%.0f,%.0f", mean,median,mode);	
+	printf("%.0f,%.0f,%.0f", mean,median,mode);	
 //	}			
 			
 	/*a= getchar() - 48;
@@ -36,4 +45,5 @@ int main(void){
 	e = getchar() - 48;
 */
 	printf("%d,%d,%d,%d,%d\n",a,b,c,d,e);
+	return (0);
 }
