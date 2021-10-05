@@ -10,9 +10,9 @@ int main(void){
 	int finalMode = 0; //actual mode value
 
 
+	printf("input 5 integers and type done, hitting enter after each input\n");
 	for(i = 0;i < 5;++i)//a loop that takes 5 inputs
 		scanf("%d\n",&in[i]);
-
 
 	//mean calculations
 	for(i = 0;i < 5;i++)
@@ -49,9 +49,9 @@ int main(void){
 
 
 	//median calculations
-	for(i = 0;i < 5;i++)
+	for(i = 0;i < 5;i++) //each input is assigned to the sorted array
 		out[i] = in[i];
-	for(i = 0;i < 5;i++){
+	for(i = 0;i < 5;i++){ //array sorter
 		for(j = i + 1;j < 5;j++){
 			if(out[i] > out[j]){
 				k  = out[i];
@@ -61,7 +61,11 @@ int main(void){
 		}	
 	}
 
-	printf("The mean is %.2f\nThe mode is %d\nThe median is %d\n", mean, finalMode, out[2]);
+	if(finalMode != 0)
+		printf("The mean is %.2f\nThe mode is %d\nThe median is %d\n", mean, finalMode, out[2]);
+	if(finalMode == 0)
+		printf("The mean is %.2f\nThere is no mode\nThe median is %d\n", mean, out[2]);
+		
 
 	return (0);
 }
