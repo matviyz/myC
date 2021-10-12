@@ -14,9 +14,9 @@ int main(void) {
     printf("input an integer: ");
     scanf("%d", &i); //inputs an integer and assigns to int i
 
+    printf("your letter is %d.\n", c); //prints letter using integer conversion
     printf("your decimal number is %d.\n", f); //prints float using int conversion
     printf("your integer is %f.\n", i); //prints integer using float conversion
-    printf("your letter is %d.\n", c); //prints letter using integer conversion
 
     return 0;
 }
